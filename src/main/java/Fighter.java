@@ -22,10 +22,7 @@ public abstract class Fighter {
     public void setHealth(int health) {
         this.health = health;
     }
-    public void fight(Fighter enemy){
-
-        System.out.println(enemy.getName()+ " wird angegriffen");
-    }
+    public abstract void fight(Fighter enemy);
     public void bringtInfos(){
         System.out.println(name+ " ,Health: "+health);
     }
